@@ -1,0 +1,21 @@
+{
+  "name": "@validapp/trader-joe-sdk",
+  "version": "0.1.0",
+  "description": "",
+  "typings": "types/index.d.ts",
+  "main": "lib",
+  "scripts": {
+    "build": "rm -rf dist && rm -rf lib && rm -rf types && sol2ts contracts.config.json && npm run build:lib",
+    "build:lib": "tsc && node esbuild.bundle"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@ijstech/eth-wallet": "https://github.com/ijstech/eth-wallet",
+    "esbuild": "0.13.13",
+    "ts-node": "10.1.0",
+    "typescript": "4.2.4"
+  }
+}
